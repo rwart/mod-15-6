@@ -47,6 +47,12 @@ class Stopwatch {
       this.times.minutes += 1;
       this.times.seconds = 0;
     }
+
+    if (this.times.minutes >= 100) {
+      this.times.centiseconds = 0;
+      this.times.seconds = 0;
+      this.times.minutes = 0;
+    }
   }
 
   stop() {

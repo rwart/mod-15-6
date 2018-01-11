@@ -8,10 +8,16 @@ body {
 .app {
   background: #607d8a;
   margin: 0 auto;
-  max-width: 350px;
+  max-width: 450px;
   padding: 5px;
   text-align: center;
 
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .controls {
@@ -32,4 +38,12 @@ body {
   color: #bababa;
   font-size: 70px;
   font-weight: 600;
+}
+
+.results {
+  color: #bababa;
+  font-size: 20px;
+  font-weight: 400;
+  list-style-type: none;
+  padding: 0;
 }

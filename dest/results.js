@@ -3,15 +3,26 @@ var _createClass = function () { function defineProperties(target, props) { for 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 var Results = function () {
-  function Results(e) {
+  function Results(element) {
     _classCallCheck(this, Results);
 
-    this.domElement = e;
+    this.list = element;
   }
 
   _createClass(Results, [{
-    key: "addResult",
-    value: function addResult(item) {}
+    key: 'store',
+    value: function store(strTimes) {
+      var element = document.createElement('li');
+      element.innerHTML = strTimes;
+      this.list.appendChild(element);
+    }
+  }, {
+    key: 'clear',
+    value: function clear() {
+      while (this.list.lastChild) {
+        this.list.removeChild(this.list.lastChild);
+      }
+    }
   }]);
 
   return Results;

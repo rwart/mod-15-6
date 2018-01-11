@@ -1,6 +1,9 @@
 const stopwatch = new Stopwatch(
   document.querySelector('.stopwatch'));
 
+const results = new Results(
+    document.querySelector('.results'));
+
 const startButton = document.getElementById('start');
 startButton.addEventListener('click', () => stopwatch.start());
 
@@ -10,5 +13,10 @@ stopButton.addEventListener('click', () => stopwatch.stop());
 const resetButton = document.getElementById('reset');
 resetButton.addEventListener('click', () => stopwatch.clear());
 
-const results = new Result(
-  document.querySelector('.results'));
+const storeButton = document.getElementById('store');
+storeButton.addEventListener('click', () => results.store(
+  stopwatch.format(stopwatch.times)
+));
+
+const clearButton = document.getElementById('clear');
+clearButton.addEventListener('click', () => results.clear());

@@ -2,7 +2,8 @@
 	"only": [
 			"*.babel",
 			"*.jsx",
-			"*.es6"
+			"*.es6",
+			"*.js"
 		],
 	"presets": [
 		"es2015",
