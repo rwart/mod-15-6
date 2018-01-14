@@ -6,7 +6,7 @@ var Stopwatch = function () {
   function Stopwatch(display) {
     _classCallCheck(this, Stopwatch);
 
-    this.runing = false;
+    this.running = false;
     this.display = display;
     this.reset();
     this.print(this.times);

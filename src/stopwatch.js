@@ -1,6 +1,6 @@
 class Stopwatch {
   constructor(display) {
-    this.runing = false;
+    this.running = false;
     this.display = display;
     this.reset();
     this.print(this.times);
